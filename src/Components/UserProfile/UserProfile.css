@@ -1,0 +1,59 @@
+.user-profile {
+	width: 100%;
+	padding-bottom: 50px;
+	height: 100vh;
+	background: var(--footer-bg-color);
+} 
+.user-profile-avatar-google {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+.user-profile-avatar-react {
+	cursor: pointer;
+}
+.user-profile-avatar-name-container {
+	width: 85%;
+	height: 140px;
+	background: var(--bg-color);
+	padding-left: 20px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	gap: 2em;
+	color: var(--text-color);
+}
+.user-profile-published-ad-container{
+	position: relative;
+	top: 100px;
+	left: 100px;
+	color: var(--text-color);
+	height: 100vh;
+}
+.user-profile-published-ad-container h3 {
+	margin-bottom: 15px;
+}
+.user-profile-ads-container {
+	width: 70%;   
+	height: 50vh;
+	padding-bottom: 15px;
+	overflow-y: scroll ;
+	display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(auto-fill,290px);
+}
+.user-profile-ads-container::-webkit-scrollbar {
+	width: 7px;
+}
+.user-profile-ads-container::-webkit-scrollbar-thumb {
+	background: var(--footer-bg-color);
+	border-radius: 10px;
+}
+.user-profile-ads-container:hover::-webkit-scrollbar-thumb {
+	background: #ccc;
+}

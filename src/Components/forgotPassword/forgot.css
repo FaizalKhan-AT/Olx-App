@@ -1,0 +1,130 @@
+.forgot-password {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+}
+.forgot-title {
+    color: var(--text-color);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.forgot-password-container {
+  width: 350px;
+  height: 300px;
+  border: 1px solid var(--text-muted-color);
+  border-radius: 5px;
+  background: var(--bg-color);
+}
+.forgot-form{
+  position: relative;
+  top: 3%;
+  left: 10%;
+}
+.form-input-forgot {
+  width: 80%;
+  height: 50px;
+  background: none;
+  outline: none;
+  border: 2px solid var(--text-muted-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+  color: var(--text-color);
+}
+.form-controls-forgot label {
+  position: absolute;
+  left: 0;
+  margin: 28px 0 0 10px;
+  color: var(--text-muted-color);
+  background: var(--bg-color);
+  transition: 0.3s ease-in-out;
+}
+.form-input-forgot:not(:placeholder-shown).form-input-forgot:not(:focus)
+  ~ label {
+  color: var(--input-focus-color);
+  margin: 2px 0 0 10px;
+  font-size: 13px;
+}
+.form-input-forgot:not(:placeholder-shown).form-input-forgot:not(:focus) {
+  border: 2px solid var(--input-focus-color);
+}
+.form-input-forgot::placeholder {
+  opacity: 0;
+}
+.form-input-forgot:focus,
+.form-input-forgot:valid.form-input-forgot:not(:focus) {
+  border: 2px solid var(--input-focus-color);
+}
+.form-input-forgot:focus + label,
+.form-input-forgot:valid.form-input-forgot:not(:focus) ~ label {
+  color: var(--input-focus-color);
+  margin: 2px 0 0 10px;
+  font-size: 13px;
+}
+.forgot-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  gap: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  width: 80%;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+  color: var(--bg-color);
+  background: var(--text-color);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in;
+}
+.forgot-button:hover {
+  background: #014c55;
+}
+.forgot-login-link {
+  color: var(--text-color);
+  text-decoration: 2px solid underline;
+  position: relative;
+  left: 40%;
+  top: 50px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.forgot-login-link:hover {
+  text-decoration: none;
+  color: var(--text-hover-color);
+}
+.forgot-message {
+  width: 95%;
+  position: relative;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  height: auto;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  background: rgba(76, 243, 98, 0.5);
+}
+.forgot-error {
+  width: 100%;
+  position: relative;
+  top: 42%;
+  padding: 10px;
+  height: auto;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  background: rgba(243, 76, 76, 0.5);
+}

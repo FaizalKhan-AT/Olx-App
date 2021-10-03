@@ -1,0 +1,118 @@
+.banner {
+    width: 100%;
+    height: 400px;
+}
+.categories {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background:var(--bg-color);
+}
+
+.dropdown {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 10%;
+    transform: translate(-10%,0);
+    cursor: pointer;
+}
+.dropdown-menu  {
+    position: absolute;
+    top:34px;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 290px;
+    background:var(--bg-color);
+    border-radius: 0 0 7px 7px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+   
+    overflow-y: scroll;
+}
+.dropdown-menu h3 {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+.dropdown-menu h3,
+.dropdown-menu p {
+    margin: 10px 10px;
+}
+.dropdown-menu p {
+    color: var(--text-muted-color);
+}
+.dropdown-menu p:hover {
+    color: var(--text-hover-color);
+}
+.dropdown-category {
+    height: auto;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, 210px);
+    column-gap: 10px;
+    justify-content: center;
+}
+.dropdown-menu::-webkit-scrollbar {
+    width: 7px;
+}
+.dropdown-menu::-webkit-scrollbar-thumb {
+    background: var(--footer-bg-color);
+    border-radius: 10px;
+}
+.dropdown-menu:hover::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+.dropdown-link svg  {
+    transition: transform .5s ease-in-out;
+}
+
+.dropdown svg {
+    margin-left: 10px;
+}
+.dropdown-link {
+    display: flex;
+    align-items: center;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--text-color);
+}               
+.dropdown-menu.dropdown-activated-banner {
+    transform: scale(1);
+}
+.dropdown-activated-banner  {
+    transform: rotate(180deg);
+}
+
+.items {
+    display:flex;
+    list-style: none;
+    font-size: 12px;
+    text-transform: none;
+    width: 1000px;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    color: var(--text-muted-color);
+    
+}
+.item-link {transition: .2s ease-in-out;}
+.item-link:hover{
+ color: var(--text-hover-color);
+}
+.banner-img {
+    background-repeat: no-repeat;
+    background-image: url('../../Images/hero-bg-in.jpg');
+    background-position: center;
+    width: 100%;
+    height: 300px;    
+    background-size: cover;
+}

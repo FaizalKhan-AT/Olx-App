@@ -1,0 +1,44 @@
+.edit-post-button-cotainer {
+	display: flex;
+	width: 95%;
+	padding: 20px;
+	justify-content: space-between;
+	margin-left: 20px;
+}	
+.edit-post-discard-btn {
+	height: 40px;
+    width: 78px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid var(--text-color);
+    transition: 0.2s ease;
+}
+.edit-post-submit-btn {
+	width: 200px;
+    height: 40px;
+    background: var(--text-color);
+    border: 1px solid var(--text-muted-color);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.edit-post-discard-btn:hover {
+    border-bottom: 3px solid var(--bg-color);
+}
+.edit-post-submit-btn:hover
+ {
+    background: none;
+    color: var(--text-color);
+    border:5px solid var(--text-color);
+}

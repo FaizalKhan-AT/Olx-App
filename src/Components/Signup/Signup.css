@@ -1,0 +1,148 @@
+.signup {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+}
+.signup-form-container {
+    width: 350px;
+    height: 500px;
+    border: 1px solid var(--text-muted-color);
+    border-radius: 5px;
+    background: var(--bg-color);
+}
+.signup-form {
+    position: relative;
+    top: 3%;
+    left: 10%;
+}
+.signup-logo {
+    display: flex;
+    justify-content: center;
+}
+.signup-logo svg {
+    fill: var(--text-color);
+    cursor: pointer;
+}
+.signup-form input {
+    width: 80%;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: 2px solid var(--text-muted-color);
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 15px;
+    color: var(--text-color);
+}
+.signup-form label {
+    position: absolute;
+    left: 0;
+    margin: 28px 0 0 10px;
+    color: var(--text-muted-color);
+    background: var(--bg-color);
+    transition: .3s ease-in-out;
+}
+.form-input:focus ,.form-input:valid.form-input:not(:focus)  {
+    border:2px solid var(--input-focus-color) ;
+} 
+.form-input:focus + label,
+.form-input:valid.form-input:not(:focus) ~ label
+{
+    color: var(--input-focus-color);
+    margin: 2px 0 0 10px;
+    font-size: 13px;
+}
+.form-input[id='email']:not(:placeholder-shown).form-input:not(:focus) ~ label {
+    color: var(--input-focus-color);
+    margin: 2px 0 0 10px;
+    font-size: 13px;
+}
+.form-input[id='email']:not(:placeholder-shown).form-input:not(:focus) {
+  border: 2px solid var(--input-focus-color);
+}
+.form-input[id='email']::placeholder {
+    opacity: 0;
+}
+.password-warning {
+    color: red;
+}
+.signup-btn {
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: 25%;
+    transform: translateX(-25%);
+    margin-top: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .2s ease;
+    background: none;
+    border: 2px solid var(--text-muted-color); 
+    color: var(--text-color);
+}
+.signup-btn:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+}
+
+.signup-btn.submit-disabled {
+    cursor: not-allowed;
+    background: var(--text-muted-color);
+    color: var(--bg-color);
+}
+.eye-icon svg {
+    fill: var(--text-color);
+}
+.password-controls{
+    position: relative;
+}
+.eye-icon {
+    position: absolute;
+    right: 80px;
+    bottom:19px;
+    cursor: pointer;
+    transform: scale(0);
+    background: none;
+    outline: none;
+    border: none;
+}
+.form-input[name='password']:valid ~ .eye-icon {
+    transform: scale(1);
+}
+.already-member {
+    margin:40px 0 0 62px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.login-link-in-form {
+    color:var(--text-color);
+    text-decoration: 2px solid underline;
+    margin-left: 2px;
+}
+.login-link-in-form:hover {
+    text-decoration: none;
+    color: var(--text-hover-color);
+}
+.show-password-svg {
+    fill: var(--text-hover-color) !important;
+}
+.signup-errors {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    height: auto;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    background: rgba(243, 76, 76,0.5);
+}

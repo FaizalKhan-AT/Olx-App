@@ -1,0 +1,52 @@
+html {
+  --navbar-bg:#f7f8f8;
+  --bg-color:#fff;
+  --card-bg-color:#fff;
+  --search-bg-color:#002f34;
+  --input-focus-color:#23e5db;
+  --text-hover-color:#32b6af;
+  --text-color:#002f34;
+  --text-muted-color:#5f7d80;
+  --card-selling-bg-color:#3a77ff;
+  --footer-bg-color:#ebeeef;
+  --footer-second-bg-color:#002f34;
+  --quick-recommend-bg:#ebeeef;
+  scroll-behavior: smooth;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: var(--bg-color);
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+body::-webkit-scrollbar-thumb {
+ background: var(--footer-bg-color);
+ border-radius: 10px;
+}
+body:hover::-webkit-scrollbar-thumb{
+ background: #ccc;
+}
+.offline-indication {
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  width: 250px;
+  height: 50px;
+  background: #2b2b2b;
+  color: var(--bg-color);
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  letter-spacing: 2px;
+  z-index: 20;
+  border-radius: 5px;
+}

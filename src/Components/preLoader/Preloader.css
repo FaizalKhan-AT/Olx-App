@@ -1,0 +1,44 @@
+
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background:var(--footer-bg-color);
+  z-index: 50;
+}
+.sticky-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  background:var(--footer-bg-color);
+  z-index: 50;
+
+}
+.preloader-slider {
+  height: 100%;
+  animation: loading 2s ease infinite;
+}
+@keyframes loading {
+  0% { 
+    width: 0;
+   }
+   25%{
+     background: var(--text-color);
+   }
+   50% {
+     background: var(--text-muted-color);
+   }
+   75% {
+    background: var(--text-hover-color);
+
+   }
+  100% { 
+    width: 100%;
+    background: var(--text-hover-color);
+
+   }
+}

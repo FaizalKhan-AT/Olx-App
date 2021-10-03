@@ -1,0 +1,560 @@
+
+.create-ad-navbar {
+	width: 100%;
+	height: 10vh;
+	background: var(--footer-bg-color);
+	box-shadow: 0 0 15px  rgba(0, 0, 0, 0.2);
+	position: fixed;
+    top: 0;
+    z-index: 5;
+}
+.logo-ad-navbar {
+	margin-left: 50px;
+	cursor: pointer;
+}
+.logo-ad-navbar svg {
+	fill: var(--text-color);
+}
+/* file upload progress */
+.create-ad-file-upload-progress {
+	position: fixed;
+	bottom: 40px;
+	right: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+	width: 300px;
+	height: 100px;
+	background: var(--footer-bg-color);
+	border-radius: 5px;
+	z-index: 4;
+	display: flex;
+ 	align-items: center;
+ 	flex-direction: column;
+}
+.upload-progress-file-text {
+	color: var(--text-color);
+	font-size: 18px;
+	font-weight: bold;
+	margin: 10px 10px;
+}
+.upload-progress-file {
+ 	width: 90%;
+ 	border: 2px solid greenyellow;
+ 	height: 9px;
+ 	margin-top: 20px;
+ 	border-radius: 10px;
+}
+.upload-progress-file-thumb {
+	/*width: calc(var(--progress,0) *1px);*/
+	height: 100%;
+	background: greenyellow;
+	overflow: hidden;
+}
+/*footer*/
+.create-ad-footer {
+	width: 100%;
+	height: 40px;
+	background: var(--text-color);
+	position: relative;
+	bottom: -200px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px; 
+	align-items: center;
+	color: var(--bg-color);
+	cursor: pointer;
+}
+
+
+
+.create-ad-title {
+	color: var(--text-color);
+	font-size: 25px;
+	font-weight: bold;
+	position: relative;
+	top: calc(10vh + 30px);
+	text-align: center;
+}
+.create-ad-form-container {
+	width: 90%;
+	height: calc(auto + 100px);
+	position: relative;
+	top: calc(10vh + 100px);
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 5px;
+	border: 1px solid var(--text-muted-color);
+}
+.create-ad-form-title{
+	width: 100%;
+	height: 80px;
+	border-bottom: 1px solid var(--text-muted-color);
+	display: flex;
+	align-items: center;
+	padding-left: 40px;
+	color: var(--text-color);
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.create-ad-set-price,
+.create-ad-set-phone,
+.create-ad-category,
+.create-ad-set-location,
+.create-ad-submit
+{
+	width: 100%;
+	height: 16vh;
+	border-bottom: 1px solid var(--text-muted-color);	
+}
+.create-ad-set-location {height: auto;}
+.create-ad-set-price,
+.create-ad-submit {
+	border-top: 1px solid var(--text-muted-color);
+	border-bottom: none;	
+}
+.create-ad-submit {height: 10vh;}
+.create-ad-set-location,.create-ad-set-phone{border: none;}
+
+.create-ad-set-price-title,
+.create-ad-set-phone-title,
+.create-ad-category-title,
+.create-ad-include-title,
+.create-ad-set-location-title  {
+	padding:10px 40px;
+	color: var(--text-color);
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.create-ad-set-price-input,
+.create-ad-set-phone-input,
+.create-ad-set-location-input
+ {
+	width: 366px;
+	height: 50%;
+	border: 1px solid var(--text-muted-color);
+	margin-left: 40px;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	padding:0 15px 0 15px;
+	gap:20px ;
+}
+.create-ad-set-location-input{margin-top: 8px;}
+.create-ad-set-price-input-icon,
+.create-ad-set-phone-input-icon {
+	font-size: 25px;
+	color: var(--text-color);
+	border-right: 1px solid var(--text-muted-color);
+	padding-right: 15px;
+}
+.create-ad-set-phone-input-icon {font-size: 20px;}
+.create-ad-set-price-input input,
+.create-ad-set-phone-input input,
+.create-ad-set-location-input input {
+	height: 100%;
+	width: 100%;
+	border: none;
+	outline: none;
+	font-size: 23px;
+	color: var(--text-color);
+}
+.create-ad-set-price-input:focus-within,
+.create-ad-set-location-input:focus-within,
+.create-ad-set-phone-input:focus-within ,
+#create-ad-category-select:focus,
+#create-ad-brand-select:focus,
+#create-ad-job-select:focus,
+#create-ad-bike-select:focus,
+#create-ad-elect-select:focus,
+#create-ad-vehicle-select:focus,
+#create-ad-car-select:focus,
+#create-ad-furniture-select:focus,
+#create-ad-fashion-select:focus,
+#create-ad-sports-select:focus,
+#create-ad-pets-select:focus,
+#create-ad-service-select:focus,
+#create-ad-location-select:focus,
+.create-ad-set-desc-input:focus,
+.create-ad-set-title-input:focus,
+.create-ad-set-brand:focus,
+.create-ad-set-year:focus,
+.create-ad-set-driven:focus,
+.create-ad-prop-built-area:focus,
+.create-ad-job-salary-input:focus {
+ 	border: 3px solid var(--input-focus-color);
+}
+
+.create-ad-category,
+.create-ad-mobile-brand,
+.create-ad-job-type,
+.create-ad-set-title-desc,
+.create-ad-bike-type,
+.create-ad-elect-type,
+.create-ad-vehicle-type,
+.create-ad-furniture-type,
+.create-ad-fashion-type,
+.create-ad-sports-type,
+.create-ad-pets-type,
+.create-ad-service-type,
+.create-ad-location,
+.create-ad-car-brand {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	position: relative;
+}
+#create-ad-category-select,
+#create-ad-brand-select,
+#create-ad-job-select,
+#create-ad-bike-select,
+#create-ad-elect-select,
+#create-ad-vehicle-select,
+#create-ad-car-select,
+#create-ad-furniture-select,
+#create-ad-fashion-select,
+#create-ad-sports-select,
+#create-ad-pets-select,
+#create-ad-service-select,
+#create-ad-location-select {
+	appearance: none;
+	border: none;
+	outline: none;
+	margin-left: 40px;
+	padding: 2px 10px;
+	width: 366px;
+	height: 50%;
+	border-radius: 5px;
+	border: 1px solid var(--text-muted-color);
+	cursor: pointer;
+	font-size: 17px;
+	letter-spacing: 1px;
+	display: flex;
+}
+
+#create-ad-brand-select,
+#create-ad-job-select,
+#create-ad-bike-select,
+#create-ad-elect-select,
+#create-ad-vehicle-select,
+#create-ad-car-select,
+#create-ad-furniture-select,
+#create-ad-fashion-select,
+#create-ad-sports-select,
+#create-ad-pets-select,
+#create-ad-service-select,
+#create-ad-location-select {
+	height: 50px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#create-ad-category-select::-webkit-scrollbar,
+#create-ad-brand-select::-webkit-scrollbar,
+#create-ad-job-select::-webkit-scrollbar,
+#create-ad-bike-select::-webkit-scrollbar,
+#create-ad-elect-select::-webkit-scrollbar,
+#create-ad-vehicle-select::-webkit-scrollbar,
+#create-ad-car-select::-webkit-scrollbar,
+#create-ad-furniture-select::-webkit-scrollbar,
+#create-ad-fashion-select::-webkit-scrollbar,
+#create-ad-sports-select::-webkit-scrollbar,
+#create-ad-pets-select::-webkit-scrollbar,
+#create-ad-service-select::-webkit-scrollbar,
+#create-ad-location-select::-webkit-scrollbar,
+.create-ad-set-desc-input::-webkit-scrollbar {
+	width: 0.2rem;
+}
+#create-ad-category-select::-webkit-scrollbar-thumb,
+#create-ad-brand-select::-webkit-scrollbar-thumb,
+#create-ad-job-select::-webkit-scrollbar-thumb,
+#create-ad-bike-select::-webkit-scrollbar-thumb,
+#create-ad-elect-select::-webkit-scrollbar-thumb,
+#create-ad-vehicle-select::-webkit-scrollbar-thumb,
+#create-ad-car-select::-webkit-scrollbar-thumb,
+#create-ad-furniture-select::-webkit-scrollbar-thumb,
+#create-ad-fashion-select::-webkit-scrollbar-thumb,
+#create-ad-sports-select::-webkit-scrollbar-thumb,
+#create-ad-pets-select::-webkit-scrollbar-thumb,
+#create-ad-service-select::-webkit-scrollbar-thumb,
+#create-ad-location-select::-webkit-scrollbar-thumb,
+.create-ad-set-desc-input::-webkit-scrollbar-thumb {
+	background: dimgray;
+	border-radius: 5px ;
+}
+
+.down-icon-select,
+.down-icon-select-mobile,
+.down-icon-select-job,
+.down-icon-select-bike,
+.down-icon-select-elect,
+.down-icon-select-vehicle,
+.down-icon-select-car,
+.down-icon-select-furniture,
+.down-icon-select-fashion,
+.down-icon-select-sports,
+.down-icon-select-pets,
+.down-icon-select-service,
+.down-icon-select-location {
+	position: absolute;
+	top: 65px;
+	left: 366px;
+	fill: var(--text-color);
+	pointer-events: none;
+}
+.down-icon-select,
+.down-icon-select-location {
+	top: 61px;
+}
+.down-icon-select-mobile,
+.down-icon-select-job,
+.down-icon-select-bike,
+.down-icon-select-elect,
+.down-icon-select-vehicle,
+.down-icon-select-furniture,
+.down-icon-select-car,
+.down-icon-select-fashion,
+.down-icon-select-sports,
+.down-icon-select-pets,
+.down-icon-select-service,
+.down-icon-select-location {
+ 	top: 48px;
+}
+
+.create-ad-set-title-desc {
+	width: 100%;
+	height: 45vh;
+	color: var(--text-color);
+	padding-top: 5px;
+}
+.create-ad-set-title-desc label,
+.create-ad-cars-container label,
+.create-ad-properties-container label,
+.create-ad-file-upload label,
+.create-ad-mobiles-container label,
+.create-ad-jobs-container label,
+.create-ad-bike-container label,
+.create-ad-elect-container label,
+.create-ad-vehicle-container label,
+.create-ad-furniture-container label,
+.create-ad-fashion-container label,
+.create-ad-sports-container label,
+.create-ad-pets-container label,
+.create-ad-service-container label,
+.create-ad-set-location label {
+	margin:5px 0  0 40px;
+    color: var(--text-color);
+}
+.create-ad-file-upload-btn {margin:5px 0  0 40px;}
+.create-ad-set-desc-input,
+.create-ad-set-title-input,
+.create-ad-set-year,
+.create-ad-set-driven,
+.create-ad-prop-built-area,
+.create-ad-job-salary-input {
+	width: 549px;
+	border: 1px solid var(--text-muted-color);
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	color: var(--text-color);
+	margin:5px 40px;
+	padding: 5px;
+}
+.create-ad-set-year,
+.create-ad-set-driven {
+	width: 366px;
+}
+.create-ad-set-desc-input{
+	height: 100px;
+	resize: none;
+	overflow-y: visible;
+}
+.create-ad-set-title-input,
+.create-ad-set-brand,
+.create-ad-set-year,
+.create-ad-set-driven,
+.create-ad-prop-built-area,
+.create-ad-job-salary-input,
+.create-ad-set-location-input {
+	height: 50px;
+}
+.create-ad-set-title-spans,
+.create-ad-set-desc-spans {
+	width: 45%;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 40px;	
+	font-size: 15px;
+	color: var(--text-muted-color);
+}
+.create-ad-set-title-input:focus.create-ad-form-input-error,
+.create-ad-set-desc-input:focus.create-ad-form-input-error,
+.create-ad-set-desc-input.create-ad-form-input-error,
+.create-ad-set-title-input.create-ad-form-input-error{
+	border: 3px solid red;
+	color: red;
+}
+.create-ad-include-title {
+	margin-bottom: 10px;
+}
+/*Other components*/
+.create-ad-cars-container,
+.create-ad-properties-container,
+.create-ad-mobiles-container,
+.create-ad-jobs-container,
+.create-ad-bike-container,
+.create-ad-elect-container,
+.create-ad-vehicle-container,
+.create-ad-furniture-container,
+.create-ad-fashion-container,
+.create-ad-sports-container,
+.create-ad-pets-container,
+.create-ad-service-container {
+	width: 100%;
+	color: var(--text-color);
+	border-bottom: 1px solid var(--text-muted-color);	
+}
+
+.create-ad-set-brand,
+.create-ad-set-year,
+.create-ad-set-driven,
+.create-ad-prop-built-area,
+.create-ad-job-salary-input {
+	margin-bottom: 15px;
+}
+.create-ad-cars-fuel-choice,
+.create-ad-cars-transmission-choice,
+.create-ad-properties-type-choice,
+.create-ad-properties-bedrooms-choice,
+.create-ad-properties-bathrooms-choice,
+.create-ad-properties-furnishing-choice,
+.create-ad-properties-Listed-choice,
+.create-ad-mobile-type-choice,
+.create-ad-job-salary-choice,
+.create-ad-job-position-choice {
+	margin: 20px 0;
+	width: 60%;
+}
+.create-ad-cars-fuel-btn,
+.create-ad-cars-transmission-btn,
+.create-ad-properties-type-btn,
+.create-ad-properties-bedrooms-btn,
+.create-ad-properties-bathrooms-btn,
+.create-ad-properties-furnishing-btn,
+.create-ad-properties-Listed-btn,
+.create-ad-mobile-type-btn,
+.create-ad-job-salary-btn,
+.create-ad-job-position-btn {
+	width: 250px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+	position: relative;
+  	display: inline-block;
+  	user-select: none;
+}
+.create-ad-cars-fuel-btn:last-child {
+	justify-content: center;
+}
+.Choice-slider:hover {
+	color: rgb(21, 81 ,77);
+	border: 1px solid var(--input-focus-color);
+	background:rgba(166, 239, 235,0.5);
+}
+.radioBtn {
+	height: 0;
+	width: 0;
+	opacity: 0;
+}
+.radioBtn:checked + .Choice-slider {
+	color: rgb(21, 81 ,77);
+	border: 1px solid var(--input-focus-color);
+	background:rgba(166, 239, 235,0.8);
+}
+.Choice-slider {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	border-radius: 5px;
+	bottom: 0;
+	color: var(--text-color);
+	border: 1px solid var(--text-color);
+}
+.create-ad-file-upload {
+	border-top:1px solid var(--text-color);
+	padding-top: 40px;
+	color: var(--text-color);
+	border-bottom: 1px solid var(--text-color);
+
+}
+.create-ad-file-upload-btn,
+.create-ad-submit-btn {
+	width: 200px;
+    height: 40px;
+    background: var(--text-color);
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    color: var(--bg-color);
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+.create-ad-submit-btn { margin-left: 40px;}
+.create-ad-file-upload-btn:hover,
+.create-ad-submit-btn:hover {
+	background: none;
+	border: 1px solid var(--text-color);
+	color: var(--text-color);
+}
+.create-ad-files {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) ;
+	gap: .2rem;
+	padding-left: 10px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+.create-ad-file-preview {
+	width: 200px;
+	height: 113px;
+	object-fit: contain;
+	border: 1px solid var(--text-color);
+}
+@media screen and (max-height: 650px) {
+  .create-ad-submit {
+  	height: 13vh;
+  }
+  .create-ad-set-location{
+  	height: 42vh;
+  }
+  .create-ad-set-title-desc {
+    height: 53vh;
+  }
+  .create-ad-category,
+  .create-ad-set-price {
+  	height: 20vh;
+  }
+  .create-ad-set-phone {
+  	height: 18vh;
+  }
+  #create-ad-category-select {
+  	height: 50px;
+  }
+  
+}
+@media screen and (max-width: 650px) {
+	.create-ad-set-desc-input,
+	.create-ad-set-title-input,
+	.create-ad-set-year,
+	.create-ad-set-driven,
+	.create-ad-prop-built-area,
+	.create-ad-job-salary-input {
+		width: 366px;
+	}
+}
