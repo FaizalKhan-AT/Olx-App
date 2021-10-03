@@ -12,6 +12,13 @@
 /build
 # unwanted folders and files
 /src/Firebase
+/build
+/.firebaserc
+/storage.rules
+/firestore.rules
+/firebase.json
+/firestore.indexes.json
+/firebase-debug.txt
 /shareicon.svg
 # misc
 .DS_Store

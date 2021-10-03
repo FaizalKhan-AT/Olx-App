@@ -498,10 +498,8 @@ function Create () {
 							year:adCarYear ? adCarYear: "No Year",
 							driven:adCarDriven ? adCarDriven: "No km driven",
 			    		}).then(() => {
-		    				setTimeout(() => {
 		    					setLoading(false);
 		    					history.push('/');	
-		    				},3000)
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -516,11 +514,9 @@ function Create () {
 							propertyListedby:propertyListedby ? propertyListedby : 'No listed by',
 							propertyListedfor:propertyListedfor ? propertyListedfor : 'No listed for',
 							squarefeet:adPropBuiltup ? adPropBuiltup : 'No squarefeet'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			    					    				
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)		    			
+		    					history.push('/');			    						    		
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -530,11 +526,9 @@ function Create () {
 			    			...basicDetails,
 			    			type:mobileType ? mobileType : "No type",
 							MobileBrand:adMobileBrand ? adMobileBrand : "No brand"
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)		    			
+		    					history.push('/');	    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -547,11 +541,9 @@ function Create () {
 							type:adJobType ? adJobType : "No type",
 							Salaryfrom:adJobSalaryfrom ? adJobSalaryfrom : "No Salaryfrom",
 							Salaryto:adJobSalaryto ? adJobSalaryto : "No Salaryto"
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {	
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    			
+		    					history.push('/');		    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -563,11 +555,9 @@ function Create () {
 							BikeBrand:adBikeBrand ? adBikeBrand : 'No brand',
 							year:adBikeYear ? adBikeYear : 'No year',
 							driven:adBikeDriven ? adBikeDriven : 'No km driven'
-			    		}).then(() => {			    		
-		    				setTimeout(() => {
+			    		}).then(() => {		
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)		    		
+		    					history.push('/');	    		
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -576,11 +566,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			type:adElectronics ? adElectronics : 'No type'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    			
+		    					history.push('/');			    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -592,11 +580,9 @@ function Create () {
 							type:adVehicleType ? adVehicleType : 'No type',
 							year:adVehicleYear ? adVehicleYear : 'No year',
 							driven:adVehicleDriven ? adVehicleDriven : 'No km driven'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)		    			
+		    					history.push('/');	    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -605,11 +591,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			type:adFurniture ? adFurniture : "No type"
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    			
+		    					history.push('/');			    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -618,11 +602,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			fashionFor:adFashion ? adFashion : 'No fashionFor'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    			
+		    					history.push('/');			    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -631,11 +613,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			type:adSports ? adSports : 'No type'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    			
+		    					history.push('/');		    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -644,11 +624,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			type:adPets ? adPets : 'No Type'
-			    		}).then(() => {			    		
-		    				setTimeout(() => {
+			    		}).then(() => {			    
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)			    		
+		    					history.push('/');			    		
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)
@@ -657,11 +635,9 @@ function Create () {
 						firebasedb.firestore().collection('posts').add({
 			    			...basicDetails,
 			    			type:adServices ? adServices : 'No Type'
-			    		}).then(() => {			    			
-		    				setTimeout(() => {
+			    		}).then(() => {			   
 		    					setLoading(false);
-		    					history.push('/');	
-		    				},3000)		    			
+		    					history.push('/');	    			
 			    		}).catch((error) => {
 				    		setError(error.message)
 				    		setCloseError(true)

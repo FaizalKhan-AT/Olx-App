@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Olx App Clone with ![](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-20.png) React and ![](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-27.png) Firebase (Desktop Version)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can see this project here   [App link](https://olx-app-clone.web.app/).
 
-## Available Scripts
+## Short Description
 
-In the project directory, you can run:
+This is desktop clone of the famous application called olx where you can sell used items of all category and new items as well.This repo is no commit history version of the app so you won't be able to see the commit history of this repo ('i have made my main remote repo private').This app has all the core fuctionality of the olx, and i tried to replicate the desktop design of the web app adding all the functionality like that  of olx (this is not a responsive web app). fun fact is that this app was created a long time ago with minimum functionality due to some other factors , then now i updated this app with all the core functionality.
 
-### `npm start`
+## What are the core functionalities
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Authentication
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+Like all other app this app also have a login and signup component where you can signup for a new account or just login with email and password or with google login.this app also have an forgotten password route for resetting your password.
+``` 
+<br/>
 
-### `npm test`
+### Edit and View profile
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Its very important to show user details and also allow them to edit their details.Edit profile component can edit basic details of the user like username, email,phone and add description.View profile shows the user details and also shows the published ads of the user, giving the user the ability to edit and delete his post.
+```
 
-### `npm run build`
+### Creating, Editing and Deleting Ads
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+Another important functionality of the is to create or post new ads. here user can post new ads with a wide range of categories and fields related to each category, can upload mutiple images and include details of the item. as i said in the earlier heading, user can go to view profile to see his/her published ads and also can edit and delete the post.In edit ad component user can  edit basic details of the post.
+```
+### Search and Filter
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+Very Important and core feature of every app is to search and filter data.
+this app has a seprate filter page which users can filter ads based on categories,location posted and with budget range.Other than filter page this app has a dedicated fitlering in home page which filters ads according to categories and location. The dedicated search bar and location search bar has search auto complete, the search auto complete has a bunch of cool auto completions where user can directly go to post,and also can search for various categories, types and more.  
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Apart from the above stated functionalities there are so many features included in this app. so i recommend you to check out [the app here](https://olx-app-clone.web.app/).
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+`Recommended Browser : Chrome ` (as some of the css styles only work in chrome and mozilla)
